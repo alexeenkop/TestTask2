@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:scrollbars="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:id="@+id/editName"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#a69fa0"
+        android:textSize="@dimen/b_text"
+        android:hint="@string/name"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:id="@+id/editMail"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#a69fa0"
+        android:textSize="@dimen/b_text"
+        android:hint="@string/mail"
+        android:singleLine="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:id="@+id/editPass"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#a69fa0"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/b_text"
+            android:hint="@string/pass"
+            android:clickable="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:id="@+id/btnSP"
+            android:src="@mipmap/shape"
+            android:layout_gravity="right"
+            android:background="#00ffffff" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/gender"
+            android:id="@+id/textView2"
+            android:textColor="#a69fa0"
+            android:textSize="@dimen/b_text" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:checkedButton="@+id/male">
+            <RadioButton android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/button_radio_m"/>
+            <RadioButton android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/button_radio_f"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageButton3"
+            android:layout_centerVertical="true"
+            android:text="@string/loc"
+            android:id="@+id/textView3"
+            android:textColor="#a69fa0"
+            android:textSize="@dimen/b_text" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageButton3"
+            android:src="@mipmap/location"
+            android:background="#00ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/by_reg"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#2a4052"
+        android:textColorLink="#e65069"
+        android:linksClickable="true"
+        android:textSize="@dimen/text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/reg"
+        android:id="@+id/btnReg"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_reg"
+        android:textSize="@dimen/b_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#1d3649"
+        android:textColorLink="#e65069"
+        android:textSize="@dimen/b_text"
+        android:linksClickable="true" />
+</LinearLayout>

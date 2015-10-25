@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestTask2</string>
+    <string name="name">Your name</string>
+    <string name="mail">Your e-mail</string>
+    <string name="pass">Your password</string>
+    <string name="gender">Gender</string>
+    <string name="loc">Location</string>
+    <string name="reg">Register</string>
+    <string name="by_reg">By registering, you agree to the <a href="http://">User Agreement</a>, <a href="http://">Privacy Policy</a> and <a href="http://">Cookie Policy Use</a></string>
+    <string name="log_in">Already have an account? <a href="http://">Log in</a></string>
+</resources>
